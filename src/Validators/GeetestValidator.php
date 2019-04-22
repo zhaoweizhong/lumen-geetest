@@ -25,7 +25,7 @@ class GeetestValidator
      */
     public function validate()
     {
-        list($geetest_challenge, $geetest_validate, $geetest_seccode) = array_values(request()->only('geetest_challenge', 'geetest_validate', 'geetest_seccode'));
+        list($geetest_challenge, $geetest_validate, $geetest_seccode) = array_values(app('request')->only('geetest_challenge', 'geetest_validate', 'geetest_seccode'));
         if (GeetestValidator::getHttpcode('https://api.geetest.com/register.php') == 403) {
             if (Geetest::successValidate($geetest_challenge, $geetest_validate, $geetest_seccode, ['user_id'=>'mengtu'])) {
                 return true;
