@@ -1,5 +1,5 @@
 {
-    "name": "Zhaoweizhong/lumen-geetest",
+    "name": "zhaoweizhong/lumen-geetest",
     "type": "library",
     "description": "极验验证码 v3.0 Lumen 扩展包",
     "keywords": [
@@ -7,7 +7,7 @@
         "Geetest",
         "Lumen"
     ],
-    "homepage": "https://github.com/Zhaoweizhong/lumen-geetest",
+    "homepage": "https://github.com/zhaoweizhong/lumen-geetest",
     "license": "MIT",
     "authors": [
         {
